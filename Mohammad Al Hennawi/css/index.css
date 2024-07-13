@@ -213,7 +213,7 @@ a {
 }
 
 main {
-  background: #1B2030 url('img/w2Bg.jpg') 60% 0 no-repeat;
+  background: #1B2030 url('./img/w2Bg.jpg') 60% 0 no-repeat;
   background-size: cover;
   padding: 20px;
   background-color: #ffdd7f7a;
