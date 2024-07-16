@@ -84,11 +84,11 @@ header {
     font-size: var(--nav-font-size);
     transition: all var(--transition-duration) ease;
 }
-.top-bar ul li:hover{
+.top-bar .menu, .top-bar ul li:hover{
     transition: all var(--transition-duration) ease;
     border-radius: 10px;
 }
-.top-bar ul li a:hover {
+.top-bar .menu:hover, .top-bar ul li a:hover {
     color: var(--accent-color);
     font-size: var(--nav-font-size-hover);
     transition: all var(--transition-duration) ease;
@@ -339,3 +339,52 @@ footer .info a {
 footer .info a:hover {
     color: var(--hover-color);
 }
+.menu{
+    width: 100px;
+    height: 50px;
+    font-family: var(--font-family);
+    font-size: 25px;
+    background-color: #ff000000;
+    margin: 2.5vw;
+    border: 2px solid var(--background-color);
+    color: #ffffff;
+    display: none;
+  }
+.list-menu{
+    gap: 2px;
+    position: absolute;
+    right: 100px;
+    top: 130px;
+    max-height: 600px;
+    width: 150px;
+    justify-content: center;
+    display: flex !important;
+    flex-wrap: wrap;
+    background-color: var(--primary-color);
+    border-radius: 15px;
+    
+  }
+  
+  @media screen and  (max-width: 800px) {
+    header .top-bar ul{
+      display: none;
+     }
+     header .top-bar ul li{
+      width: 100px;
+     }
+    .menu{
+      display: block;
+     }
+    section{
+      width: 100%;
+    }
+  }
+  @media screen and  (min-width: 800px) {
+    #list3{
+      display: none;
+    }
+    .list-menu{
+      display: none !important;
+    }
+  }
+  
