@@ -6,9 +6,6 @@ btn.addEventListener("click", ()=>{
         pale.innerHTML = "🌝"
     }else if (document.getElementById("inp2").value === "نسم"){      
         pale.innerHTML = "Majd"
-    }
-    else if (document.getElementById("inp2").value === "toto"){
-        pale.innerHTML = "Tala"
     } else {
         pale.innerHTML = "Pale"
     }
